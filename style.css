@@ -1,0 +1,122 @@
+boby {
+  text-align: center;
+}
+
+div {
+  padding: 50px;
+  margin: 10px auto;
+  background-color: rgb(1, 17, 17);
+  width: 20px;
+  height: 20px;
+}
+/* Fondu */
+.d1 {
+  opacity: 1;
+}
+.d1:hover {
+  opacity: 0.5;
+}
+
+/*  Changer de couleur */
+.d2:hover {
+  background-color: aqua;
+}
+
+/*  Grandir et rétrécir(mettre des valeurs min) */
+
+.d3:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  margin: 25px auto;
+}
+
+/*  Faire pivoter les éléments*/
+
+.d4:hover {
+  -webkit-transform: rotateZ(-30deg);
+  -ms-transform: rotateZ(-30deg);
+  transform: rotateZ(-30deg);
+}
+
+/* Modifier la forme en cercle*/
+.d5:hover {
+    border-radius:50%;
+}
+
+/*  Ombres 3D */
+.d6:hover {
+  box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+}
+
+/*  Ballencer recouyer */
+.d7 {
+  animation-name: d7;
+}
+@-webkit-keyframes d7 {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes d7 {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.d7:hover {
+  -webkit-animation: d7 3s ease;
+  animation: d7 1s ease;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/*Bordure en médaillon*/
+
+.d8:hover {
+  box-shadow: inset 0 0 0 25px #53a7ea;
+}
